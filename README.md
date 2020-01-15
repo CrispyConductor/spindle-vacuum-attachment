@@ -18,6 +18,10 @@ This vacuum attachment prints in 3 parts:
 2. The clip is glued onto the clamp.  This is what the tubes slide into.
 3. The spindle vacuum tube, which slides into the clip and attaches with a detent.  More than one of these can be printed, and they can be easily exchanged as needed.
 
+## Editing the OpenSCAD File
+
+Parameters can be changed by editing the OpenSCAD file and exporting STLs.  The file contains multiple different components in the form of modules.  Some parameters are outside of the modules (shared between different ones) and some are contained within the individual module.  At the bottom of the file are commented-out lines that can be uncommented to render each different part.
+
 ## Printing
 
 Check the OpenSCAD file to ensure the default parameters will work for you (and if not, edit them and export the new STLs).  The most important parameters to watch for are the spindle motor diameter for the clamp (called squeezeRingId, defaulting to 52mm or 2in) and the size of the attached vacuum hose (hoseHolderId1 and hoseHolderId2, defaulting to 31mm and 32.5mm, for a slight taper).  Changing these settings may require others to be changed.
